@@ -1,0 +1,19 @@
+
+{% from "macros/fields.tmpl" import render_input_field, render_password_field,
+                                    render_submit %}
+{% extends "shared/layout.tmpl" %}
+{% block content %}
+
+    <p><a href="graf">Graf</a></p>
+    <p><a href="vystuppdf">PDF</a></p>
+ <h1>Můj formulář - pisemka 9.12.2014</h1>
+
+    <form method="POST" id="formular">
+    {{ form.hidden_tag() }}
+    {{ render_input_field(form.cislo1) }}
+    {{ render_input_field(form.cislo2) }}
+    <p>výsledek = číslo 1 * číslo 2</p>
+    {{ render_submit() }}
+  </form>
+
+{% endblock %}

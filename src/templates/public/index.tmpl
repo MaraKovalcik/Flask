@@ -1,0 +1,17 @@
+{% extends "shared/layout.tmpl" %}
+
+{% block content %}
+  {% if current_user.is_anonymous() %}
+    <p>Please login</p>
+    <p><a href="formular">Formulář</a></p>
+    <p><a href="graf">Graf</a></p>
+    <p><a href="vystuppdf">PDF</a></p>
+    <p><a href="vystuppdf1">Výpis do PDF</a></p>
+  {% elif not current_user.is_verified() %}
+    <p>
+      Please verify your account by clicking the activation link sent to your email address. Click <a href="{{ url_for('auth.resend_activation_email') }}">here</a> to resend.
+    </p>
+  {% else %}
+      <p>Welcome home {{ current_user.username|e }}</p>
+  {% endif %}
+{% endblock %}

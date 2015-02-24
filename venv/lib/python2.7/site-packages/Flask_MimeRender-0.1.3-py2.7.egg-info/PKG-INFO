@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: Flask-MimeRender
+Version: 0.1.3
+Summary: RESTful resource variant rendering using MIME Media-Types, for the Flask Micro Web Framework
+Home-page: https://github.com/nicolaiarocci/flask-mimerender
+Author: Nicola Iarocci
+Author-email: nicola@nicolaiarocci.com
+License: MIT
+Description: 
+            This module allows, with the use of python decorators, to transparently select a render function for an HTTP request handler's result. It uses mimeparse to parse the HTTP Accept header and select the best available representation.
+            This is a Flask port from the original, excellent, mimerender v0.2.3 by Martin Blech (http://code.google.com/p/mimerender/)
+            
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires: flask

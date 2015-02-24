@@ -1,0 +1,26 @@
+
+{% from "macros/fields.tmpl" import render_input_field, render_password_field,
+                                    render_submit %}
+{% extends "shared/layout.tmpl" %}
+{% block content %}
+    <p><a href="formular">Formulář</a></p>
+    <p><a href="graf">Graf</a></p>
+
+        <h2>Some page title.</h2>
+        <table width="100%" cellpadding="4" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td width="100%">Some text.</td>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr style="border: 1px solid #000000;">
+                    <td width="100%">
+                        <h3 style="text-align: center;">Some subtitle</h3>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr style="margin: 3em 0;"/>
+{% endblock %}

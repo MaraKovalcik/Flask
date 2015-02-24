@@ -1,0 +1,7 @@
+#!/home/mara/Dokumenty/PycharmProjects/flask-skeleton/venv/bin/python
+
+import warnings
+warnings.simplefilter('default', DeprecationWarning)
+
+from logilab.common.pytest import run
+run()
